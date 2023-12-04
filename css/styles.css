@@ -85,6 +85,11 @@
     padding: 10px;
 }
 
+.greetings span {
+    white-space: nowrap; /* Evitar que las letras se dividan en varias líneas */
+    margin: 0 5px; /* Espacio entre las letras, ajusta según sea necesario */
+}
+
 @media (max-width: 768px) {
     .center-message {
         max-width: 90%; /* Ajusta según sea necesario */
@@ -92,6 +97,9 @@
 
     .greetings {
         margin-top: 300px;
+        flex-direction: column; /* Mostrar las letras en columnas en lugar de una fila */
+        align-items: center; /* Centrar las letras verticalmente */
+        font-size: 40px;
     }
 
     #agradecimiento {

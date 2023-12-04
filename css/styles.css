@@ -12,6 +12,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    max-width: 80%; /* Ajusta según sea necesario */
 }
 
 #particles-js {
@@ -79,6 +80,30 @@
 }
 
 #agradecimiento{
-    font-size: 18px;
+    font-size: 16px; /* Ajusta según sea necesario */
     margin-bottom: 5px;
+    padding: 10px;
 }
+
+@media (max-width: 768px) {
+    .center-message {
+        max-width: 90%; /* Ajusta según sea necesario */
+    }
+
+    .greetings {
+        margin-top: 300px;
+    }
+
+    #agradecimiento {
+        font-size: 14px; /* Ajusta según sea necesario */
+        margin-bottom: 40px; /* Ajusta según sea necesario */
+    }
+    .card{
+        margin-top: 150px;
+    }
+    p {
+        margin-bottom: 3rem;
+    }
+}
+
+
